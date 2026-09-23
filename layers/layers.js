@@ -32,7 +32,7 @@ lyr_GoogleMaps_0.setVisible(true);lyr_Fotos_1.setVisible(true);
 var layersList = [lyr_GoogleMaps_0,lyr_Fotos_1];
 lyr_Fotos_1.set('fieldAliases', {'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', });
 lyr_Fotos_1.set('fieldImages', {'photo': 'ExternalResource', 'filename': '', 'directory': 'ExternalResource', 'altitude': '', 'direction': '', 'rotation': '', 'longitude': '', 'latitude': '', 'timestamp': '', });
-lyr_Fotos_1.set('fieldLabels', {'photo': 'no label', 'filename': 'hidden field', 'directory': 'hidden field', 'altitude': 'header label - always visible', 'direction': 'hidden field', 'rotation': 'no label', 'longitude': 'no label', 'latitude': 'no label', 'timestamp': 'header label - visible with data', });
+lyr_Fotos_1.set('fieldLabels', {'photo': 'no label', 'filename': 'hidden field', 'directory': 'hidden field', 'altitude': 'inline label - always visible', 'direction': 'hidden field', 'rotation': 'hidden field', 'longitude': 'inline label - always visible', 'latitude': 'inline label - always visible', 'timestamp': 'header label - visible with data', });
 lyr_Fotos_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
